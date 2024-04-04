@@ -9,6 +9,15 @@ function Flower(color, petals, smell){
     this.smellsPretty = smell;
 }
 
+//creating Flower objects using the constructor function
+var rose = new Flower('red', 32, true);
+var dandelion = new Flower('yellow', 14, false);
+var orchid = new Flower('white', 4, true);
+
+//console.logging the properties of the FLower object
+console.log("Rose", rose);
+console.log("Dandelion", dandelion);
+console.log("Orchid", orchid);
 
 
 // Question 2: 
@@ -20,7 +29,7 @@ function Contact(name, email) {
  }
 
 let myOtherContact = new Contact('Everest', 'everest@hello.com');
-console.log(myOtherContact.name);
+console.log(myOtherContact.name); //Everest
   
 
 // What would be logged to the console when this code is run?
@@ -39,7 +48,7 @@ function Animal(species, noise) {
 }
 // How would you create an instance of an Animal?
 
-
+var bird = new Animal("bird", chirp)
 
 
 
@@ -47,11 +56,38 @@ function Animal(species, noise) {
 
 // Create a constructor for an object that holds the information for a Todo List. Each new object created by the constructor should have:
 
+function ToDoList(description) {
+  this.description = description;
+  this.isDone = false; //Initially this task is not done.
+
+
+  // A method to call when the task is done.
+  this.markAsDone = function() {
+    this.isDone = true;
+    console.log("Task '" + this.description + "' is done.");
+  }
+}
+
 // A description of the task.
 // An attribute to define if the task is done.
 // A method to call when the task is done.
 
 // Create 3 objects with the constructor function
+
+// Creating instances of TodoList
+var task1 = new TodoList("Finish homework");
+var task2 = new TodoList("Buy groceries");
+var task3 = new TodoList("Call mom");
+
+// Marking a task as done
+task1.markAsDone();
+
+// Output the details of each task
+console.log(task1);
+console.log(task2);
+console.log(task3);
+
+
 
 
 
