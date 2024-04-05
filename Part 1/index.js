@@ -75,17 +75,17 @@ function ToDoList(description) {
 // Create 3 objects with the constructor function
 
 // Creating instances of TodoList
-var task1 = new TodoList("Finish homework");
-var task2 = new TodoList("Buy groceries");
-var task3 = new TodoList("Call mom");
+var job1 = new TodoList("work on Portfolio");
+var job2 = new TodoList("finish coding assignments");
+var job3 = new TodoList("love on grandbabies");
 
 // Marking a task as done
 task1.markAsDone();
 
 // Output the details of each task
-console.log(task1);
-console.log(task2);
-console.log(task3);
+console.log(job1);
+console.log(job2);
+console.log(job3);
 
 
 
